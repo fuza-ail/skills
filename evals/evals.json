@@ -1,0 +1,23 @@
+{
+  "skill_name": "yt-research",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "can you summarize this video for me and pull out the key takeaways? https://www.youtube.com/watch?v=tz23G_UXCGA",
+      "expected_output": "Video deep-dive report: TL;DR, numbered key insights, notable details — grounded in the actual transcript, not the title",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I want to study how @veritasium makes videos that get so many views. Research the channel and tell me their content patterns.",
+      "expected_output": "Channel study: overview stats, top-videos table, content patterns backed by transcript evidence, per-video mini-summaries",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "what does the channel @ycombinator say about fundraising? research their videos on that topic",
+      "expected_output": "Topic-focused report: picks fundraising-related videos from the channel listing, fetches those transcripts, organizes findings around fundraising advice",
+      "files": []
+    }
+  ]
+}

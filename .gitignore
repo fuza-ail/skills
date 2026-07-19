@@ -1,0 +1,4 @@
+yt_data/
+*.skill
+__pycache__/
+.DS_Store
