@@ -24,8 +24,9 @@ npx skills add fuza-ail/skills --skill '*'
 | [yt-brand](skills/yt-brand/SKILL.md) | One-time channel brand interview → `brand.md` (niche, voice, format, visual identity) that the other yt-* skills read automatically |
 | [yt-packaging](skills/yt-packaging/SKILL.md) | Package a video before making it — ranked title options, thumbnail concepts, and ready-to-paste image-gen prompts (Midjourney/Flux/Nano Banana) |
 | [yt-script](skills/yt-script/SKILL.md) | Retention-engineered long-form scripts — hook, open loops, chapters, re-hooks, b-roll/scene cues — for faceless or on-camera channels |
+| [yt-visuals](skills/yt-visuals/SKILL.md) | Faceless pipeline: turns a script's `[VISUAL:]` cues into a numbered, batch-ready prompt sheet — image prompts + image-to-video motion prompts with a locked style block for consistency |
 
-**The chain:** `yt-research` (study the niche) → `yt-brand` (once) → `yt-packaging` (per video) → `yt-script` (per video).
+**The chain:** `yt-research` (study the niche) → `yt-brand` (once) → `yt-packaging` (per video) → `yt-script` (per video) → `yt-visuals` (per video, faceless).
 
 ### yt-research
 
@@ -48,7 +49,8 @@ skills/
 │   └── scripts/yt_fetch.py   # bundled fetcher script
 ├── yt-brand/SKILL.md
 ├── yt-packaging/SKILL.md
-└── yt-script/SKILL.md
+├── yt-script/SKILL.md
+└── yt-visuals/SKILL.md
 evals/                        # test prompts for skill development
 ```
 

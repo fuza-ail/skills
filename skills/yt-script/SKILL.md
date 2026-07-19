@@ -38,7 +38,7 @@ VO: Most glue joints don't fail at the glue. They fail...
 [VISUAL: macro shot, glue joint splitting in slow motion — cinematic]
 ```
 
-`[VISUAL:]` cues follow brand.md art direction. After the script, offer to expand cues into ready image/video-gen prompts (same prompt craft as **yt-packaging** step 3 — or the user's ig-video-prompts skill if installed).
+`[VISUAL:]` cues follow brand.md art direction. Aim for one cue per beat (~every 5-15 seconds of VO) — these become the shot list. After the script, offer to run **yt-visuals**, which turns every cue into batch-ready image + motion prompts with a locked style block.
 
 **On-camera:** spoken script in the creator's brand.md voice (contractions, natural rhythm — read-aloud test it) + `[B-ROLL:]` cues and `[SCREEN:]` overlays where a visual carries the point.
 
