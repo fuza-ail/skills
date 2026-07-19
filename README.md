@@ -1,55 +1,47 @@
-# yt-research
+# skills
 
-Claude skill for researching and learning from any YouTube video or channel.
+My collection of Claude/agent skills. Install any of them with [npx skills](https://github.com/vercel-labs/skills):
 
-Give it a video URL or a channel handle — it fetches transcripts and metadata, then produces summaries, key insights, and content-pattern analysis.
+```bash
+# list what's available
+npx skills add fuza-ail/skills --list
 
-## What it does
+# install one skill
+npx skills add fuza-ail/skills --skill yt-research
+
+# install globally (available in every project)
+npx skills add fuza-ail/skills --skill yt-research -g
+
+# install everything
+npx skills add fuza-ail/skills --skill '*'
+```
+
+## Skills
+
+| Skill | What it does |
+|---|---|
+| [yt-research](skills/yt-research/SKILL.md) | Research any YouTube video or channel — fetches transcripts + metadata, produces summaries, key insights, and content-pattern analysis |
+
+### yt-research
+
+Give it a video URL or channel handle:
 
 - **Single video** → deep-dive report: TL;DR, key insights, notable details (with timestamps)
 - **Channel study** → performance snapshot, content patterns, title formulas, key ideas across videos
 - **Topic research** → "what does this channel say about X" across their videos
 
-Data fetching is handled by a bundled script using [youtube-transcript-api](https://pypi.org/project/youtube-transcript-api/) and [yt-dlp](https://github.com/yt-dlp/yt-dlp) — dependencies auto-install via [uv](https://docs.astral.sh/uv/) (PEP 723 inline metadata), so there is no setup step.
+Fetching uses [youtube-transcript-api](https://pypi.org/project/youtube-transcript-api/) + [yt-dlp](https://github.com/yt-dlp/yt-dlp); dependencies auto-install via [uv](https://docs.astral.sh/uv/) (PEP 723 inline metadata) — no setup step.
 
-## Install
-
-```bash
-npx skills add fuza-ail/yt-research --skill yt-research
-```
-
-Or install globally (available in every project):
-
-```bash
-npx skills add fuza-ail/yt-research --skill yt-research -g
-```
-
-Manual install (Claude Code):
-
-```bash
-git clone https://github.com/fuza-ail/yt-research
-cp -r yt-research/skills/yt-research ~/.claude/skills/
-```
-
-## Requirements
-
-- [uv](https://docs.astral.sh/uv/) (recommended — zero-setup), or `pip install youtube-transcript-api yt-dlp`
-
-## Usage
-
-Just talk to Claude:
-
-- "Summarize this video: https://youtube.com/watch?v=..."
-- "Research @veritasium — what are their content patterns?"
-- "What does @ycombinator say about fundraising?"
-
-The skill triggers automatically on YouTube links and channel handles.
+Try: *"Research @veritasium — what are their content patterns?"*
 
 ## Repo layout
 
 ```
-skills/yt-research/
-├── SKILL.md              # skill instructions
-└── scripts/yt_fetch.py   # fetcher: video / channel / transcript subcommands
-evals/evals.json          # test prompts for skill development
+skills/
+└── yt-research/
+    ├── SKILL.md              # skill instructions (frontmatter: name + description)
+    └── scripts/yt_fetch.py   # bundled fetcher script
+evals/                        # test prompts for skill development
 ```
+
+Each skill is a folder under `skills/` containing a `SKILL.md`. Adding a new skill = adding a new folder.
