@@ -1,6 +1,7 @@
 ---
 name: yt-visuals
-description: Turn a faceless YouTube script's [VISUAL:] cues into a complete, batch-ready visual prompt sheet — numbered image-generation prompts (Midjourney, Flux, Nano Banana) plus image-to-video motion prompts (Runway, Kling, Sora, Hailuo, Pika) with a locked style block for scene-to-scene consistency. Use whenever the user has a script or scene list and needs the visuals made: "generate the prompts for my script", "make the visuals", "image prompts for each scene", "turn this script into AI video prompts", or after yt-script finishes a faceless script. Also use to build a reusable character/style sheet for a channel.
+description: >-
+  Turn a faceless YouTube script's [VISUAL:] cues into a complete, batch-ready visual prompt sheet — numbered image-generation prompts (Midjourney, Flux, Nano Banana) plus image-to-video motion prompts (Runway, Kling, Sora, Hailuo, Pika) with a locked style block for scene-to-scene consistency. Use whenever the user has a script or scene list and needs the visuals made: "generate the prompts for my script", "make the visuals", "image prompts for each scene", "turn this script into AI video prompts", or after yt-script finishes a faceless script. Also use to build a reusable character/style sheet for a channel.
 ---
 
 # YouTube Visuals (faceless prompt pipeline)
